@@ -22,13 +22,19 @@ public class Main {
 
     private static void regularRecursionExample() {
         System.out.println(" Пример обычной рекурсии с условием для выхода:");
-        System.out.println("calcSomeWithCondition(1) = " + calcSomeWithCondition(1));
+        System.out.println("  calcSomeWithCondition(1) = " + calcSomeWithCondition(1));
     }
 
     private static void infiniteRecursionExample() {
         System.out.println(" Пример бесконечной рекурсии:");
-        System.out.println("  заремлено, потому что программа завершается по ошибке и не идет дальше");
-        //System.out.println("calcSome(1) = " + calcSome(1));
+        System.out.println("  заремлено, потому что программа выводит в консоль много мусора");
+/*
+        try {
+            System.out.println("  calcSome(1) = " + calcSome(1));
+        } catch (StackOverflowError e) {
+            System.out.println("StackOverflowError");
+        }
+*/
     }
 
     private static int calcSome(int n) {
